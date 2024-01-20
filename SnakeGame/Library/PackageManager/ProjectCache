@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638413463510000000
-    m_Hash: 1646665576
+      ticks: 638413609210000000
+    m_Hash: 169113269
   m_LockFileStatus:
     m_FilePath: /Users/pranavajay/games/3dSnake/SnakeGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638413463540000000
-    m_Hash: 4059302960
+      ticks: 638413609210000000
+    m_Hash: 2511245600
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,96 @@ m_LocalPackages:
 m_ProjectPath: /Users/pranavajay/games/3dSnake/SnakeGame/Packages
 m_EditorVersion: 2022.3.16f1 (d2c21f0ef2f1)
 m_ResolvedPackages:
+- packageId: com.unity.cinemachine@2.9.5
+  testable: 0
+  isDirectDependency: 1
+  version: 2.9.5
+  source: 1
+  resolvedPath: /Users/pranavajay/games/3dSnake/SnakeGame/Library/PackageCache/com.unity.cinemachine@2.9.5
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: 
+  description: "Smart camera tools for passionate creators. \n\nNew starting from
+    2.7.1: Are you looking for the Cinemachine menu? It has moved to the GameObject
+    menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy Asset Store version
+    of Cinemachine, delete the Cinemachine asset from your project BEFORE installing
+    this version from the Package Manager."
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 2.9.5
+    compatible:
+    - 2.9.5
+    recommended: 2.9.5
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.31
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: 4b4405b9505ecfa1cb2d2b03df8f3309c12f3b0d
+    path: 
+  unityLifecycle:
+    version: 2.9.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.collab-proxy@2.2.0
   testable: 0
   isDirectDependency: 1
