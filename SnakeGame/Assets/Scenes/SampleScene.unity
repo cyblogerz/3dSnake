@@ -331,6 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 847486589}
+  - component: {fileID: 847486590}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Untagged
@@ -356,6 +357,23 @@ Transform:
   - {fileID: 1221875172}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847486590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847486588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03f7ebbaf5a14084a090216ce7f434b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 10
+  SteerSpeed: 100
+  Gap: 100
+  BodySpeed: 10
+  BodyPrefab: {fileID: 7124840909022295909, guid: 0d78747ab5be9489da9594696ebd10b4, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
