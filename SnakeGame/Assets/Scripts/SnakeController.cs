@@ -12,7 +12,7 @@ public class SnakeController : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] float MoveSpeed = 5f;
     [SerializeField] float SteerSpeed = 100f;
-    [SerializeField] int Gap = 100;
+    [SerializeField] int Gap = 10;
 
     [SerializeField] float BodySpeed = 5f;
     [SerializeField] GameObject BodyPrefab;
@@ -39,7 +39,7 @@ public class SnakeController : MonoBehaviour
         transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
         // store head position in array
-        PositionsHistory.Insert(0,transform.position);
+        PositionsHistory.Insert(0, new Vector3(transform.position.x,-1.28f,transform.position.z));
 
         //steer to any part
         float steerDirection  = Input.GetAxis("Horizontal");
@@ -48,7 +48,7 @@ public class SnakeController : MonoBehaviour
         int index = 0;
         foreach (var body in BodyParts)
         {
-            Vector3 point = PositionsHistory[Mathf.Clamp(index *,0,PositionsHistory.Count-1)];
+            Vector3 point = PositionsHistory[Mathf.Clamp(index * Gap,0,PositionsHistory.Count-1)];
 
             // Move body towards the point along the snakes path
             Vector3 moveDirection = point - body.transform.position;
