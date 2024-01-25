@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectHit : MonoBehaviour
 {
-    
+
 
     private void OnCollisionEnter(Collision other) {
         switch (other.gameObject.tag)
@@ -16,7 +17,8 @@ public class ObjectHit : MonoBehaviour
                break;
 
             case "Obstacle":
-               Debug.Log("HIT AN OBSTACLE");
+               SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+               Debug.Log("Chathu myre");
                break;
 
             
@@ -36,5 +38,5 @@ public class ObjectHit : MonoBehaviour
         snakeController = GetComponent<SnakeController>();
     }
    
-   
+ 
 }
